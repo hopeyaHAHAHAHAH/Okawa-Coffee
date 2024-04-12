@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okawa Coffee</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://kit.fontawesome.com/77d5e2d643.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <section class="headerfix">
+        <div class="header-area">
+            <p class="sanpablo"><i class="location fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i> &ensp;
+                SANPABLO CITY, LAGUNA </p>
+
+
+            <div class="logo">
+                <a href="home.html"><img class="logo" src="logo.png" alt=""></a>
+            </div>
+
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="SEARCH">
+                    <button class="btn btn-outline-success" type="submit">SEARCH</button>
+                </form>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="aboutpage.html">ABOUT</a></li>
+                <li><a href="LOCATION.html">LOCATION</a></li>
+                <li><a href="reviewspage.html">REVIEWS</a></li>
+            </ul>
+        </nav>
+        <hr class="taskline" size="1" width="99.9%" color="#AC673F">
+    </section>
+
+    <section class="history-section">
+        <br><br>
+        <h1>REVIEWS</h1>
+        <center>
+            <p>(レビュー)</p>
+        </center>
+    </section>
+    <img src="coffeesplash.png" id="coffeesplash">
+    <img src="coffeesplash-flipped.png" id="coffeesplash1">
+    <div class="rev-container">
+        <br>
+        <center>
+            <h3>HOW DO YOU RATE OKAWA COFFEE'S WEBSITE?</h3>
+        </center>
+        <br>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="#">
+                <header></header>
+                <div class="rev-textarea">
+                    <textarea cols="30" placeholder="Describe your experience.." id="txtarea"></textarea>
+                </div>
+                <br>
+                <br>
+                <center>
+                    <h3>WHAT DO YOU WANT US TO IMPROVE?</h3>
+                </center>
+                <br>
+                <div class="rev-textarea">
+                    <textarea cols="30" placeholder="Tell us your suggestions.." id="txtarea1"></textarea>
+                </div>
+                <div class="rev-btn">
+                    <button type="button" onclick="pressPost()">Post</button>
+                </div>
+            </form>
+            <div id="post" style="display: none;">
+                <div id="text">Thanks for rating us!</div>
+                <br>
+                <div id="again" onclick="rateAgain()">RATE AGAIN</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="history-section">
+        <p>
+            Your Reviews Are Super Important For Okawa Coffee!
+            <br>
+            <br>
+            <br>
+            They Show What People Like About Us And Help Others
+            Decide If They Want To Try Us Out. Good Reviews Make Us Look Trustworthy And Can Bring In More Customers.
+            Bad Reviews Help Us See Where We Can Do Better.
+            <br>
+            <br>
+            They're Like A Conversation With You, Helping Us
+            Improve And Grow. So, Whether It's A Thumbs Up Or A Thumbs Down, Every Review Helps Us Be Better For You!
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+    </section>
+
+
+    <div class="header">
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                        fill=" #CC9767" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#CC9767" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    <div class="footer">
+        <div class="row">
+            <a href="https://www.facebook.com/profile.php?id=61554777826527" target="_blank"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutpage.html">ABOUT</a></li>
+                <li><a href="LOCATION.html">LOCATION</a></li>
+                <li><a href="home.html#contactform">CONTACT</a></li>
+
+            </ul>
+        </div>
+
+        <div class="row">
+            OKAWA COFFEE Copyright © 2024 OKAWA COFFEE - All rights reserved <br><br> Designed By: BARAOED | BLANCA |
+            BRIONES | MAULION | MANRIQUE
+        </div>
+    </div>
+    </footer>
+    <!--Content ends-->
+    <script src="okawa.js"></script>
+</body>
+
+</html>
